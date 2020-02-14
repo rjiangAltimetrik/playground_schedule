@@ -11,11 +11,24 @@ spring:
     username: rundong
     password: rundong
     driverClassName: com.mysql.cj.jdbc.Driver
-#  jpa:
-#      database: MYSQL
-#      show-sql: true
+  jpa:
+      database: MYSQL
+      show-sql: true
 #    hibernate:
 #      ddl-auto: update
 #      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
 #    properties:
 #      hibernate:
+  security:
+    basic:
+      enable: true
+    user:
+      name: root
+      password: root
+
+#  security:
+#    basic:
+#      enabled: false
+#  management:
+#    security:
+#      enabled: false
